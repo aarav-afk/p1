@@ -1,0 +1,88 @@
+/* dashboard.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #232526, #414345);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Glassy Container */
+.container {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 40px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 380px;
+  text-align: center;
+  animation: slideFadeIn 0.8s ease-out;
+}
+
+/* Heading */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Divider */
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Description */
+p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* Menu List */
+.menu {
+  list-style: none;
+  font-size: 16px;
+  padding: 0;
+}
+
+.menu li {
+  margin: 10px 0;
+}
+
+.menu a {
+  color: #00cec9;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #00cec9;
+  color: #000;
+  transform: translateX(6px);
+  box-shadow: 0 4px 12px rgba(0, 206, 201, 0.4);
+}
+
+/* Animation */
+@keyframes slideFadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

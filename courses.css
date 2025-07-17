@@ -1,0 +1,42 @@
+/* courses.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Glassy Container */
+.container {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 40px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 360px;
+  animation: fadeInZoom 0.8s ease-out;
+}
+
+/* Title */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Divider */
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom:
